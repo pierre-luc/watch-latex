@@ -8,7 +8,7 @@ build:
 	make -C $(SRC)
 
 install:
-	@mkdir $(DST)
+	mkdir -p $(DST)
 	npm install
 
 install-node-npm:
