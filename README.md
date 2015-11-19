@@ -7,7 +7,7 @@ make install
 #Lancement
 
 ```bash
-gulp
+make
 ```
 
 #Erreurs
