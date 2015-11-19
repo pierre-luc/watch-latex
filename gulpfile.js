@@ -2,7 +2,7 @@ var gulp = require( 'gulp' ),
     shell = require( 'gulp-shell' );
 
 
-gulp.task( 'latex', shell.task([ 'make -C src']));
+gulp.task( 'latex', shell.task([ 'make build']));
 
 gulp.task( 'watch', function(){
 	gulp.watch( 'src/tex/**/*.tex', [ 'latex' ]);

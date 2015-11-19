@@ -1,7 +1,7 @@
 #Installation
 
 ```bash
-npm install
+make install
 ```
 
 #Lancement
@@ -15,6 +15,13 @@ Lorsque des erreurs sont rencontrées gulp d'arrête afin que vous puissiez gard
 
 
 #Installation nodejs & npm
+
+```bash
+sudo make install-node-npm
+```
+
+ou
+
 
 ```bash
 sudo apt-get install nodejs
