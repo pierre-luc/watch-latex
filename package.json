@@ -10,5 +10,22 @@
   "license": "ISC",
   "devDependencies": {
     "gulp-shell": "^0.5.1"
-  }
+  },
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierre-luc/watch-latex.git"
+  },
+  "keywords": [
+    "compilation",
+    "latex",
+    "gulp",
+    "automatic"
+  ],
+  "bugs": {
+    "url": "https://github.com/pierre-luc/watch-latex/issues"
+  },
+  "homepage": "https://github.com/pierre-luc/watch-latex#readme"
 }
