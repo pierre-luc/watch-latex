@@ -1,4 +1,4 @@
-CC=pdflatex
+CC=xelatex
 SRC=tex
 DST=../pdf
 DOC=exemple
