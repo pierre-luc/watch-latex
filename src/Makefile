@@ -1,4 +1,4 @@
-CC=xelatex
+CC=xelatex -shell-escape
 SRC=tex
 DST=../pdf
 DOC=exemple
@@ -11,4 +11,4 @@ $(DOC).pdf: $(SRC)/$(DOC).tex
 	mv $(DOC).pdf $(DST)
 
 clean:
-	rm -f $(DOC).aux $(DOC).toc $(DOC).log
+	rm -rf $(DOC).aux $(DOC).toc $(DOC).log _minted-*

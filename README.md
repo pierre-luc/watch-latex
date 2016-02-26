@@ -31,3 +31,20 @@ sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 ```
+
+#Installation bibliothèque
+
+##Installation coloration syntaxique
+
+```bash
+make install-minted
+```
+
+ou
+
+```bash
+git clone https://github.com/gpoore/minted
+mv minted lib
+ln -s minted/source/minted.sty lib/minted.sty
+```
+

@@ -1,6 +1,11 @@
 \documentclass{article}
 
 \usepackage{lib/extension}
+\usepackage{float}
+\usepackage{minted}
+\usepackage{xcolor}
+
+\definecolor{darkbg}{RGB}{250, 250, 250} % rgb(250, 250, 250)
 
 \title{Exemple}
 \author{Pierre-Luc BLOT}
@@ -25,4 +30,24 @@
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+	\section{Coloration syntaxique}
+		\begin{minted}[mathescape,
+                       linenos,
+                       numbersep=5pt,breaklines,
+                       gobble=2, bgcolor=darkbg, style=monokai]{javascript}
+
+           /**
+            * Test function :)
+            */
+           var fun = function(tokens) {
+               if (tokens instanceof Token) {
+                   return new Token(tokens.type, _.util.encode(tokens.content), tokens.alias);
+               } else if (_.util.type(tokens) === 'Array') {
+                   return tokens.map(_.util.encode);
+               } else {
+                   return tokens.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\u00a0/g, ' ');
+               }
+           }
+        \end{minted}
 \end{document}
